@@ -13,7 +13,7 @@
 			document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
 		</script>
 		<script>
-    var b=a.getImageData(0,0,512,512),d,e,f,g,h,j,k,l=0,m=0,n,p,q,r,s,t;c.setAttribute("width",512);c.setAttribute("height",512); setInterval(function(){console.log(3);l+=0.002;m+=0.005;var u=4*Math.sin(l);n=4*(Math.sin(3+m)+1);r=512/(2*n);t=n*r;for(h=0;h<b.data.length;h+=4)b.data[h]*=0.9,b.data[h+1]*=0.9,b.data[h+2]*=0.9,b.data[h+3]=255;for(var v=100;v--;){h=k=v;j=0;for(g=1200;g--;)j!=k&&(h=(h-k)/(h+u*j+k),j=(h-k)/(j-k),k=(h-k)/(u*h-j+k),p=h*Math.cos(m)-j*Math.sin(m),q=h*Math.sin(m)+j*Math.cos(m),p<n&&(p>-n&&q<n&&q>-n)&&(d=Math.floor(t-p*r),e=Math.floor(t-q*r),f=Math.abs(20*k),s=4*(512*d+e),b.data[s]+=32,b.data[s+1]+=15,b.data[s+ 2]+=f))}a.putImageData(b,0,0)},10);
+    var S=768,b=a.getImageData(0,0,S,S),d,e,g,h,j,k,l=0,m=0,n,p,q,r,s,t;c.setAttribute("width",S);c.setAttribute("height",S);setInterval(function(){l+=.001;m+=.002;var u=3*Math.sin(l);n=4*(Math.sin(3+m)+1);r=S/(2*n);t=n*r;for(h=0;h<b.data.length;h+=4)b.data[h]*=.9,b.data[h+1]*=.9,b.data[h+2]*=.9,b.data[h+3]=255;for(var v=100;v--;){h=k=v;j=0;for(g=1e3;g--;)j!=k&&(h=(h-k)/(h+u*j+k),j=(h-k)/(j-k),k=(h-k)/(u*h-j+k),p=h*Math.cos(m)-j*Math.sin(m),q=h*Math.sin(k)+j*Math.cos(m),p<n&&(p>-n&&q<n&&q>-n)&&(d=Math.floor(t-p*r),e=Math.floor(t-q*r),s=4*(S*d+e),b.data[s]+=32,b.data[s+1]+=15,b.data[s+2]+=Math.abs(9*k)))}a.putImageData(b,0,0)},1);
 // end of submission //
 		</script>
 	</body>
