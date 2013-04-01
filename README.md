@@ -7,3 +7,5 @@ Here's what it looks like:
 <img width=200 height=200 src=http://i.imgur.com/VRsh9vv.gif>
 
 You can see it [here](http://qaa.ath.cx/shim1.html)
+
+And, also, [here](https://github.com/kristopolous/js1k)
