@@ -8,4 +8,4 @@ Here's what it looks like:
 
 You can see it [here](http://qaa.ath.cx/shim1.html)
 
-And, also, [here](https://github.com/kristopolous/js1k)
+And, also, [on the js1k.com site](http://js1k.com/2013-spring/demo/1534).
