@@ -2,7 +2,7 @@
 
 *This is my contribution for js1k for spring/2013.*
 
-It's based on some code I wrote in 2002. That's what all the C stuff is here.
+It's based on some code I wrote in 2002. That's why all the C stuff is here.
 
 Here's what the HTML looks like:
 
