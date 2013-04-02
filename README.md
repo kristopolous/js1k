@@ -14,7 +14,6 @@ And, also, [on the js1k.com site](http://js1k.com/2013-spring/demo/1534).
 
 I wrote this explanation for someone on [reddit](http://www.reddit.com/r/javascript/comments/1beq57/js1k_demo_an_animation_of_an_equation_system_i/c96oex2)
 
-<blockquote>
 well you are dealing with pixels first.  So you have a viewport, that's how many pixels you are seeing.  In this case I am using 768x768 (that's the first variable S=768).  Then I get a blank "image" which will be my canvas. I assign color values to that array, and then I "putImageData" back on the canvas.
 
 For this application I'm using cartesian coordinates.  I decide on my region to view, this is like on the graphing calculators
@@ -63,6 +62,5 @@ The multipliers are oscillated by trig functions between 0 and 8.  They are what
 AFAIK, this type of math isn't as well understood as say, 3d projection on a 2d plane (standard 3d stuff). So optimizations that can make things faster at least aren't known by me. So that's why in the js1k demo, the frames are partially rendered.  The image above was written in C and took about 20 minutes to generate on a modern i7 processor.
 
 In the github repository you can find this file: https://github.com/kristopolous/js1k/blob/master/html/shim.html which isn't as cryptically compressed as the one submitted for the contest.  It's still not well done however as I was essentially just hacking.
-</blockquote>
 
 <img src=http://i.imgur.com/sQaMIAm.jpg>
