@@ -10,7 +10,7 @@
   #define EQ2     b=(a+c)/(a-c);
   #define EQ3     c=(a-c)/(a+c);
 */
-  #define EQ1     a=(a-c)/(a *3.52-b);
+  #define EQ1     a=(a-c)/(a*mul-b);
   #define EQ2     b=(a-c)/(b-c);
   #define EQ3     c=(a-b)/(b+c);
 /*
@@ -35,11 +35,12 @@ int main(int argc,char*argv[])
 		cycC,iter=255,
 		hei,wid,bri;
 	double 	a,b,c,
+    mul,
 		x_p,y_p,
 		x_max,y_max,
 		x_min,y_min;
 
-	if(argc!=10)
+	if(argc!=11)
 	{       fprintf(stderr,"use 7 args; Generating default\n");
 		ppm_writeppminit(stdout,256,256,255,0);
         	for(col=0;col<65536;col++)
@@ -54,12 +55,13 @@ int main(int argc,char*argv[])
         line=(pixel**)malloc(sizeof(pixel)*hei);
 //Number of cycles
 	cycC=cyc=atoi(*++argv),
-	x_min=strtol(*++argv,(char**)NULL,10);
-	y_min=strtol(*++argv,(char**)NULL,10);
-	x_max=strtol(*++argv,(char**)NULL,10);
-	y_max=strtol(*++argv,(char**)NULL,10);
+	x_min=strtol(*++argv,(char**)NULL,11);
+	y_min=strtol(*++argv,(char**)NULL,11);
+	x_max=strtol(*++argv,(char**)NULL,11);
+	y_max=strtol(*++argv,(char**)NULL,11);
 	c_m=atoi(*++argv);
 	bri=atoi(*++argv);
+	mul=strtod(*++argv,(char**)NULL);
 
 	x_p=hei/(x_max-x_min);
 	y_p=wid/(y_max-y_min);
