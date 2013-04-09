@@ -1,4 +1,10 @@
 #!/bin/sh
 num=`printf "%0.4f" $1`
-./ex2 4800 4800 1000000 -3 -3 3 3 10 5 $num | convert - -resize 1200x $num.png
+
+if [ -e $num.png ]; then
+  echo "$num.png exists..."
+  exit
+fi
+
+./ex2 5760 3240 10000000 -1.5625 -2 1.5625 2 10 10 $num | convert - -resize 1920x $num.png
 
