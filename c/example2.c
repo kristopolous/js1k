@@ -55,10 +55,10 @@ int main(int argc,char*argv[])
         line=(pixel**)malloc(sizeof(pixel)*hei);
 //Number of cycles
 	cycC=cyc=atoi(*++argv),
-	x_min=strtol(*++argv,(char**)NULL,11);
-	y_min=strtol(*++argv,(char**)NULL,11);
-	x_max=strtol(*++argv,(char**)NULL,11);
-	y_max=strtol(*++argv,(char**)NULL,11);
+	x_min=strtod(*++argv,(char**)NULL);
+	y_min=strtod(*++argv,(char**)NULL);
+	x_max=strtod(*++argv,(char**)NULL);
+	y_max=strtod(*++argv,(char**)NULL);
 	c_m=atoi(*++argv);
 	bri=atoi(*++argv);
 	mul=strtod(*++argv,(char**)NULL);

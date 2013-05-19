@@ -14,6 +14,11 @@ You can see it [here](http://qaa.ath.cx/shim1.html) hosted by me
 
 And, also, [on the js1k.com site](http://js1k.com/2013-spring/demo/1534).
 
+## C code
+
+The C code is kind of a mess. It's mostly the same thing, over and over again - go into that directory for a readme on how to compile it.
+
+## Explanation
 I wrote this explanation for someone on [reddit](http://www.reddit.com/r/javascript/comments/1beq57/js1k_demo_an_animation_of_an_equation_system_i/c96oex2)
 
 well you are dealing with pixels first.  So you have a viewport, that's how many pixels you are seeing.  In this case I am using 768x768 (that's the first variable S=768).  Then I get a blank "image" which will be my canvas. I assign color values to that array, and then I "putImageData" back on the canvas.
