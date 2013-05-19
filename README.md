@@ -8,6 +8,8 @@ Here's what the HTML looks like:
 
 <img width=200 height=200 src=http://i.imgur.com/VRsh9vv.gif>
 
+<a href=http://www.youtube.com/watch?v=bi0_wHlhZw0>Here it is on youtube</a>
+
 You can see it [here](http://qaa.ath.cx/shim1.html) hosted by me
 
 And, also, [on the js1k.com site](http://js1k.com/2013-spring/demo/1534).
