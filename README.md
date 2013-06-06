@@ -10,7 +10,7 @@ Here's what the HTML looks like:
 
 <a href=http://www.youtube.com/watch?v=bi0_wHlhZw0>Here it is on youtube</a>
 
-You can see it [here](http://qaa.ath.cx/shim1.html) hosted by me
+You can see it [here](http://getpostdelete.com/shim1.html) hosted by me
 
 And, also, [on the js1k.com site](http://js1k.com/2013-spring/demo/1534).
 
@@ -63,7 +63,7 @@ But I made things a bit less boring
 
 By adding our under-utilized C variable (which is just the blue channel) as part of the transformation. Therein, even when the map is at a stability point (see below); it still appears to be moving around.
 
-If you take out all these things you get this: http://qaa.ath.cx/shim-boring.html
+If you take out all these things you get this: http://9ol.es/shim-boring.html
 The multipliers are oscillated by trig functions between 0 and 8.  They are what "animate" it.  Without that oscillation it would be a single generation, like this: http://i.imgur.com/HpAXScw.jpg
 
 AFAIK, this type of math isn't as well understood as say, 3d projection on a 2d plane (standard 3d stuff). So optimizations that can make things faster at least aren't known by me. So that's why in the js1k demo, the frames are partially rendered.  The image above was written in C and took about 20 minutes to generate on a modern i7 processor.
